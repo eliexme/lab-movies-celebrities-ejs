@@ -1,0 +1,11 @@
+<h2>Movie details</h2>
+<div>
+    <h3>Title: <%= oneMovieData.title %></h3>
+    <h4>Genre: <%= oneMovieData.genre %></h4>
+    <ul>Cast:
+        <% oneMovieData.cast.forEach(eachArtist => { %>
+         <li><%= eachArtist%></li>
+        <% }) %>
+    </ul>
+</div>
+

@@ -1,0 +1,8 @@
+<h2>All the movies</h2>
+<% moviesData.forEach(eachMovie => { %>
+    <div>
+        <h3><%= eachMovie.title %></h3>
+        <a href="movies/<%= eachMovie._id %>">Movie details</a>
+    </div>
+    
+<% }) %>
